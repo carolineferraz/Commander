@@ -1,4 +1,5 @@
 using Commander.Models;
+using System.Collections.Generic;
 
 namespace Commander.Data
 {
@@ -12,6 +13,8 @@ namespace Commander.Data
                 new Command {Id=1, HowTo="Cut Bread", Line="Get a Knife", Platform="knife & chopping board"},
                 new Command {Id=2, HowTo="Make cup of tea", Line="Place teabag in cup", Platform="Kettle & Cup"}
             };
+
+            return commands;
         }
 
         public Command GetCommandById(int Id)
